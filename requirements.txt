@@ -3,3 +3,4 @@ request
 BeautifulSoup
 transformers
 bs4
+python3-pip
