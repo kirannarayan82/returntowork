@@ -1,4 +1,5 @@
 streamlit
 request
-bs4
+BeautifulSoup
 transformers
+bs4
