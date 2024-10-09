@@ -1,4 +1,8 @@
-mport streamlit as st
+!pip install streamlit
+!pip install request
+!pip install bs4
+!pip install transformers
+import streamlit as st
 import requests
 from bs4 import BeautifulSoup
 from transformers import pipeline, AutoTokenizer, AutoModelForSeq2SeqLM
