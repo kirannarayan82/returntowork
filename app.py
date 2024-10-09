@@ -14,7 +14,7 @@ rag_pipeline = pipeline('text2text-generation', model=model, tokenizer=tokenizer
 def fetch_jobs(query):
     url = f"https://www.indeed.com/jobs?q={query}&l="
     response = requests.get(url)
-    soup = BeautifulSoup(response.content, 'html.parser')
+    soup = BeautifulSoup4(response.content, 'html.parser')
     jobs = soup.find_all('div', class_='jobsearch-SerpJobCard')
     job_list = []
     for job in jobs:
