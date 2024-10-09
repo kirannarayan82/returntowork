@@ -1,6 +1,6 @@
 import streamlit as st
 import requests
-from bs4 import BeautifulSoup
+import BeautifulSoup4
 from transformers import pipeline, AutoTokenizer, AutoModelForSeq2SeqLM
 
 st.title('Return-to-Work Job Listings')
